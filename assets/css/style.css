@@ -1,0 +1,13 @@
+body {
+    font-family: "Roboto", sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #263238;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
