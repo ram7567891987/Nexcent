@@ -409,11 +409,15 @@ h1, h2, h3, h4, h5, h6 {
 /* Statistics */
 
 .stat {
-    padding: 64px 20px;
+    padding: 70px 20px;
     
 
     display: flex;
     justify-content: space-between;
+}
+
+.stat__text {
+    padding: 21px 0;
 }
 
 .stat__title {
@@ -436,14 +440,12 @@ h1, h2, h3, h4, h5, h6 {
     color: #717171;
 }
 
-
-
 .stat__container {
 
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    max-width: 485px;
+    gap: 38px;
+    max-width: 515px;
 }
 
 .stat__item {
