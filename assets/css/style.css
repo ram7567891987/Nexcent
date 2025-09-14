@@ -375,8 +375,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .services__info__text {
-    padding: 83px 0;
+    padding: 83px 30px;
 }
+
 
 .services__info__title {
     font-family: "Inter", sans-serif;
