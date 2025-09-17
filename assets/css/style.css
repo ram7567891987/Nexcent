@@ -300,6 +300,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .services__cards {
+    position: relative;
     padding: 0 10px;
 
     width: 300px;
@@ -308,6 +309,43 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 8px;
 
     box-shadow: 0 2px 4px -1px #ABBED1;
+    transition: transform .2s ease;
+    transition: box-shadow .2s ea;
+    
+}
+
+.services__cards::before {
+
+    content: '';
+    position: absolute;
+    
+    width: 50px;
+    height: 50px;
+    left: 140px;
+    bottom: 180px;
+    
+    background-color: #E8F5E9;
+    border-radius: 18px 5px 10px 5px;
+    
+    z-index: 1;
+
+    transition: transform .2s ease;
+    
+}
+
+.services__cards:hover::before {
+    transform: translate(-14px, -5%);
+}
+
+.services__cards:hover {
+    transform: scale(1.10);
+    box-shadow: 0 2px 7px 1px #ABBED1;
+    
+
+}
+
+.services__background:hover {
+        transform: translate(-47px, 0%);
 }
 
 .services__icon {
@@ -316,7 +354,6 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     
     margin: 24px auto; 
-    padding-left: 40px
 }
 
 .services__img {
@@ -324,20 +361,6 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 2;
 }
 
-.services__background {
-    position: relative;
-    
-    transform: translate(-33px, 10%);
-    
-    width: 50px;
-    height: 50px;
-    
-    background-color: #E8F5E9;
-    border-radius: 18px 5px 10px 5px;
-    
-    z-index: 1;
-    
-}
 
 .services__text {
     margin: 0 auto;
@@ -569,22 +592,16 @@ h1, h2, h3, h4, h5, h6 {
 
     z-index: 2;
     transition: opacity .2s linear;
-}
+    transition: transform .2s ease;
 
+    cursor: pointer;
+}
 
 
 .about__item:hover:before {
     opacity: 1;
+    transform: scale(1.15);
 }
-
-svg {
-    transition: fill .2s linear;
-}
-
-svg:hover {
-    fill: #5417D7;
-}
-
 
 .about__desctiption {
     margin: 5px 0;
@@ -592,4 +609,19 @@ svg:hover {
 
     color: #43a046;
 }
+
+/* About Icons */
+svg {
+    transition: fill .2s linear;
+    transition: transform .2s ease;
+    cursor: pointer;
+}
+
+svg:hover {
+    fill: #5417D7;
+    transform: scale(1.15);
+}
+
+/* Testimonial */
+
 
