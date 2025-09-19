@@ -279,6 +279,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
     font-weight: 400;
     color:#89939E;
+    max-width: 585px;
+    margin: 0 auto;
 }
 
 /* Icons */
@@ -622,6 +624,87 @@ svg:hover {
     transform: scale(1.15);
 }
 
-/* Testimonial */
+/* Blog */
+
+.blog__content {
+    margin-top: 16px;
+    /* margin-bottom: 150px; */
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.blog__item {
+    position: relative;
+    display: flex;
+
+    z-index: 1;
+    height: 380px;
+}
+
+.blog__text {
+    position: absolute;
+
+    background-color: #F5F7FA;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.4);
+
+    z-index: 2;
+
+    margin: 193px 25px 0 25px;
+    padding: 11px;
+
+    font-family: "Inter", sans-serif;
+    text-align: center;
+
+}
+
+.blog__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+
+    margin: 5px 11px 24px 11px;
+
+    color: #717171;
+}
+
+.blog__btn-a {
+    padding-bottom: 10px;
+}
+
+.blog__btn {
+    text-decoration: none;
+    color: #43a046;
+    padding: 10px 0;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+}
 
 
+/* Blog CTA */ 
+
+.cta {
+    margin-top: 80px;
+}
+
+.cta__title {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 32px 0;
+
+    text-align: center;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 76px;
+}
+
+.cta__btn {
+    justify-content: center;
+    display: flex
+}
