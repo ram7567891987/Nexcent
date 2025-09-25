@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nexcent</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Google Fonts -->
@@ -15,7 +15,7 @@
 <body>
     
     <!-- Nav -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__item">
@@ -32,7 +32,7 @@
                     <a class="nav__link" href="#">FAQ</a>
                 </nav>
 
-                <div class="reg__actions">   
+                <div class="reg__actions log__btn">   
                     <a href="#" class="btn--gray">Log In</a>
                     <a href="#" class="btn--green">Sign In</a>
                 </div>
@@ -42,6 +42,7 @@
 
     <!-- Intro -->
     <div class="intro">
+        <section class="section--gray">
         <div class="container">
             <div class="intro__inner">
                 <div class="intro__content">
@@ -65,76 +66,82 @@
                     <div class="slider__item slider__item--third"></div>
                 </div>
         </div>
-
+        </section>
     </div>
 
     <!-- Clients -->
     <section class="section">
         <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Our Clients</h2>
-                <h3 class="section__suptitle">We have been working with some Fortune 500+ clients</h3>
-            </div>
-
-            <!-- Icons -->
-             <div class="icons">
-                <div class="icons__item">
-                    <img src="./assets/icons/1.svg" alt="">
-                    <img src="./assets/icons/2.svg" alt="">
-                    <img src="./assets/icons/3.svg" alt="">
-                    <img src="./assets/icons/4.svg" alt="">
-                    <img src="./assets/icons/5.svg" alt="">
-                    <img src="./assets/icons/6.svg" alt="">
-                    <img src="./assets/icons/7.svg" alt="">
+            <div class="section__content">
+                <div class="section__header">
+                    <h2 class="section__title">Our Clients</h2>
+                    <h3 class="section__suptitle">We have been working with some Fortune 500+ clients</h3>
                 </div>
-             </div>
 
-             <div class="section__header">
-                <h2 class="section__title section__title--center">Manage your entire community in a single system</h2>
-                <h3 class="section__suptitle">Who is Nextcent suitable for?</h3>
-            </div>
-
-            <div class="services">
-                <div class="services__item">
-
-                    <!-- Cards -->
-                    
-                    <div class="services__cards">
-                        <div class="services__icon">
-                            <img class="services__img" src="./assets/icons/cards/1.svg" alt="">
-                                
-                            </div>
-                            <div class="services__text">
-                                <div class="services__title">Membership Organisations</div>
-                                <div class="services__suptitle">Our membership management software provides full automation of membership renewals and payments</div>
-                            </div>
-                        </div>
-                    <div class="services__cards">
-                        <div class="services__icon">
-                            <img class="services__img" src="./assets/icons/cards/2.svg" alt="">
-                                
-                            </div>
-                            <div class="services__text">
-                                <div class="services__title">National Associations</div>
-                                <div class="services__suptitle">Our membership management software provides full automation of membership renewals and payments</div>
-                            </div>
-                        </div>
-                    <div class="services__cards">
-                        <div class="services__icon">
-                            <img class="services__img" src="./assets/icons/cards/3.svg" alt="">
-                                
-                            </div>
-                            <div class="services__text">
-                                <div class="services__title">Clubs And Groups</div>
-                                <div class="services__suptitle">Our membership management software provides full automation of membership renewals and payments</div>
-                            </div>
-                        </div>
+                <!-- Icons -->
+                <div class="icons">
+                    <div class="icons__item">
+                        <img src="./assets/icons/1.svg" alt="">
+                        <img src="./assets/icons/2.svg" alt="">
+                        <img src="./assets/icons/3.svg" alt="">
+                        <img src="./assets/icons/4.svg" alt="">
+                        <img src="./assets/icons/5.svg" alt="">
+                        <img src="./assets/icons/6.svg" alt="">
+                        <img src="./assets/icons/7.svg" alt="">
                     </div>
-                    
-                    
                 </div>
-                
+
+                <div class="section__header">
+                    <h2 class="section__title section__title--center">Manage your entire community in a single system</h2>
+                    <h3 class="section__suptitle">Who is Nextcent suitable for?</h3>
+                </div>
+
+
+            
+                    <div class="services">
+                        <div class="services__item">
+    
+                            <!-- Cards -->
+                            
+                            <div class="services__cards">
+                                <div class="services__icon">
+                                    <img class="services__img" src="./assets/icons/cards/1.svg" alt="">
+                                        
+                                    </div>
+                                    <div class="services__text">
+                                        <div class="services__title">Membership Organisations</div>
+                                        <div class="services__suptitle">Our membership management software provides full automation of membership renewals and payments</div>
+                                    </div>
+                                </div>
+                            <div class="services__cards">
+                                <div class="services__icon">
+                                    <img class="services__img" src="./assets/icons/cards/2.svg" alt="">
+                                        
+                                    </div>
+                                    <div class="services__text">
+                                        <div class="services__title">National Associations</div>
+                                        <div class="services__suptitle">Our membership management software provides full automation of membership renewals and payments</div>
+                                    </div>
+                                </div>
+                            <div class="services__cards">
+                                <div class="services__icon">
+                                    <img class="services__img" src="./assets/icons/cards/3.svg" alt="">
+                                        
+                                    </div>
+                                    <div class="services__text">
+                                        <div class="services__title">Clubs And Groups</div>
+                                        <div class="services__suptitle">Our membership management software provides full automation of membership renewals and payments</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        
+                    </div>
+
+
+            
             </div>
+        </div>
     </section>
        
     <!-- About 1 -->
@@ -525,8 +532,8 @@
 </footer>
 
 
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./assets/js/app.js"></script>
 
     </body>
 </html>
