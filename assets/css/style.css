@@ -1180,6 +1180,76 @@ svg:hover {
     }
 }
 
+@media (max-width: 780px) {
+
+    /* About */
+    .about__icons {
+        max-width: 300px;
+        gap: 20px;
+    }
+
+    .about__desctiption {
+        padding: 33px 0;
+    }
+}
+
+@media (max-width: 770px) {
+
+    /* Services */
+
+    .services__info {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .services__info__text {
+        padding: 25px 30px 25px 30px;
+    }
+
+    .services__info__title {
+        text-align: center;
+    }
+
+    .services__info__suptitle {
+        text-align: center;
+        max-width: 601px;
+    }
+
+    /* About */
+
+    .about__img {
+        width: 340px;
+        height: 340px;
+    }
+    
+    /* footer */
+
+    .footer__logo {
+        margin-right: 0;
+    }
+}
+
+
+@media (max-width: 670px) {
+
+    /* About */
+    .about__content-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__img-item {
+        margin-right: 0;
+    }
+
+    .about__icons {
+        max-width: none;
+        gap: 25px;
+    }
+
+}
+
+
 @media (max-width: 770px) {
 
 }
