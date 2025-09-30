@@ -287,7 +287,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Icons */
-.icons__item {
+.icons__content {
     display: flex;
 
     justify-content: space-evenly;
@@ -295,6 +295,12 @@ h1, h2, h3, h4, h5, h6 {
 
     margin: 50px auto;
 }
+
+.icons__item {
+    width: 49px;
+    height: 39px;
+}
+
 
 /* Services */
 
@@ -1094,7 +1100,7 @@ svg:hover {
     }
 
     .intro__inner {
-        padding: 15px 0 0 0;
+        padding: 50px 0 0 0;
     }
 
     .intro__title {
@@ -1107,7 +1113,7 @@ svg:hover {
     }
 
     .intro__img {
-        margin-top: 10px;
+        margin-top: 22px;
         padding: 10px
     }
 
@@ -1232,6 +1238,47 @@ svg:hover {
 
 @media (max-width: 670px) {
 
+    /* Intro */
+
+    .intro__title {
+        max-width: 460px;
+        font-size: 39px;
+    }
+
+    /* Services */
+
+    .services__title {
+        font-size: 22px;
+    }
+
+    .services__info__title {
+        font-size: 25px;
+        line-height: 36px;
+        margin: 0 auto;
+    }
+
+    /* Stat */
+
+    .stat__title {
+        font-size: 32px;
+        max-width: 345px;
+        margin: 0 auto;
+    }
+
+    .stat__suptitle {
+        font-size: 14px;
+    }
+
+    .stat__num {
+        font-size: 21px;
+    }
+
+
+    .stat__icon {
+        width: 50px;
+        height: 50px
+    }
+
     /* About */
     .about__content-icons {
         flex-direction: column;
@@ -1247,13 +1294,185 @@ svg:hover {
         gap: 25px;
     }
 
+    /* Section */
+
+    .section__title {
+        font-size: 27px;
+        padding-bottom: 10px;
+
+    }
+
+    .section__title--center {
+        max-width: 415px;
+    }
+
+    .section__suptitle {
+        font-size: 14px;
+    }
+
+    /* Blog */
+
+    .blog__title {
+        font-size: 18px;
+    }
+
+    .blog__btn {
+        font-size: 16px;
+    }
+
+    /* CTA */
+
+    .cta__title {
+        font-size: 36px;
+        padding: 24px 0;
+        max-width: 475px;
+        line-height: 50px;
+    }
+
+    /* Footer */
+
+    .header__logo {
+        font-size: 30px;
+    }
+
+    .footer__col--first {
+        padding-top: 10px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    /* Icons */
+    .icons__item {
+        width: 42px;
+        height: 32px
+    }
+    
+    /* Blog */
+
+    .blog__img {
+        width: 300px;
+    }
+
+    .blog__text {
+        margin: 138px 27px 0 27px;
+    }
+
+    .blog__title {
+        font-size: 15px;
+        margin: 5px 11px 11px 11px;
+    }
+
+    .blog__btn {
+        font-size: 15px;
+    }
+
+    /* CTA */
+
+    .cta {
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 525px) {
+    
+    /* Header */
+    .header__item {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    /* Footer */
+    .footer__inner {
+        justify-content: space-evenly;
+    }
+
+    .footer__col--first {
+        margin: 0 71px;
+    }
+
+    .footer__social-content {
+        gap: 47px;
+    }
+
+    .footer__info {
+        text-align: center;
+        margin: 0 auto;
+    }
+
 }
 
 
-@media (max-width: 770px) {
+    @media (max-width: 515px) {
+
+        /* Icons */
+
+        .icons__content {
+            margin: 43px auto 0;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 215px;
+        }
+
+        .icons__item--disabled {
+            display: none;
+       }
+    }
+
+@media (max-width: 500px) {
+    /* Stat */
+
+    .stat__container {
+        padding: 0;
+    }
+}
+
+@media (max-width: 475px) {
+    /* Footer */
+
+    .footer__col--first {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 465px) {
+
+    /* About */
+
+    .about__icons {
+        max-width: 180px;
+        margin: 0 auto;
+        gap: 30px;
+    }
+
+    
 
 }
 
-@media (max-width: 575px) {
+@media (max-width: 450px) {
+    /* Stat */
 
+    .stat__container {
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 440px) {
+    /* Stat */
+
+    .stat__container {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 375px) {
+    
+    /* Footer */
+    .footer__social-content {
+        gap: 30px
+    }
 }
