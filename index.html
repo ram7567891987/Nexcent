@@ -15,13 +15,19 @@
 <body>
     
     <!-- Nav -->
-    <header class="header" id="header">
+    <header class="header active" id="header">
         <div class="container">
             <div class="header__inner">
+
+                <button class="nav-toggle">
+                    <span class="nav-toggle__item"></span>
+                </button>
+
                 <div class="header__item">
-                    <img class="header__logo--img" src="./assets/icons/logo.svg" alt="">
-                    <div class="header__logo">Nexcent</div>
+                    <img class="header__logo--img header__logo--nav" src="./assets/icons/logo.svg" alt="">
+                    <div class="header__logo header__logo--disabled">Nexcent</div>
                 </div>
+
             
                 <nav class="nav">
                     <a class="nav__link" href="#">Home</a>
@@ -37,6 +43,22 @@
                         <a href="#" class="btn--gray">Log In</a>
                         <a href="#" class="btn--green">Sign In</a>
                     </div> 
+                </div>
+
+                <div class="header__icons">
+
+                    <div class="header__content">
+                        <a class="header__icon--user" href="#" target="_blank">
+                            <i class=" fa-solid fa-user"></i>
+                        </a>
+                    </div>
+
+                    <div class="header__content">
+                        <a class="header__icon--search" href="#" target="_blank">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>    
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -250,8 +272,8 @@
                      <div class="about__content-icons">
                         <div class="about__icons">
 
-                            <div class="about__item">
-                                <div class="about__img-item">
+                            <div class="about__item ">
+                                <div class="about__img-item about__img--active">
                                     <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.000000" height="40.000000">
                                         <rect id="Logo" width="40.000000" height="40.000000" x="0.000000" y="0.000000" fill="rgb(255,255,255)" fill-opacity="0" />
                                         <path id="Vector" d="M10 0C15.5228 0 20 4.47715 20 10L20 0L30 0C35.5228 0 40 4.47715 40 10C40 15.5228 35.5228 20 30 20C35.5228 20 40 24.4772 40 30C40 32.7423 38.8961 35.2268 37.1085 37.0334L37.0711 37.0711L37.0379 37.1041C35.2309 38.8943 32.7446 40 30 40C27.2741 40 24.8029 38.9093 22.999 37.1405C22.9756 37.1175 22.9522 37.0943 22.9289 37.0711C22.907 37.0492 22.8852 37.0272 22.8635 37.0051C21.0924 35.2009 20 32.728 20 30C20 35.5228 15.5228 40 10 40C4.47715 40 0 35.5228 0 30L0 20L10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM18 10C18 14.4183 14.4183 18 10 18L10 2C14.4183 2 18 5.58172 18 10ZM38 30C38 25.5817 34.4183 22 30 22C25.5817 22 22 25.5817 22 30L38 30ZM2 22L2 30C2 34.4183 5.58172 38 10 38C14.4183 38 18 34.4183 18 30L18 22L2 22ZM22 18L22 2L30 2C34.4183 2 38 5.58172 38 10C38 14.4183 34.4183 18 30 18L22 18Z" fill-rule="evenodd" />
