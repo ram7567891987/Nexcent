@@ -86,9 +86,6 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    margin: 0 -5px;
-    
 }
 
 .header__item {
@@ -225,6 +222,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
 .nav-toggle__item {
     display: block;
     width: 100%;
@@ -238,7 +236,11 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 0;
     left: 0;
     margin: auto;
+
+    transform: background .2s linear;
 }
+
+
 
 .nav-toggle__item::before, 
 .nav-toggle__item::after {
@@ -251,6 +253,9 @@ h1, h2, h3, h4, h5, h6 {
 
   left: 0;
   z-index: 1;
+
+  transition: transform .2s linear;
+
 }
 
 .nav-toggle__item::before {
@@ -259,6 +264,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-toggle__item::after {
     bottom: -8px;
+}
+
+.nav-toggle.active .nav-toggle__item {
+    background: none;
+}
+
+.nav-toggle.active .nav-toggle__item::before {
+    transform-origin: left top;
+    transform: rotate(45deg)
+    translateX(-1px) translateY(-1px)
+}
+
+.nav-toggle.active .nav-toggle__item::after {
+    transform-origin: left bottom;
+    transform: rotate(-46deg)
+    translateX(-2px) translateY(3px);
 }
 
 /* Button */
@@ -1147,6 +1168,7 @@ svg:hover {
 
     .header__logo--nav {
         position: relative;
+        margin-left: 60px;
     }
     /* Nav Bar */
     .nav, .log__btn{
@@ -1221,7 +1243,7 @@ svg:hover {
 
     .intro__inner {
         flex-wrap: wrap;
-        padding: 56px 0;
+        padding: 90px 0;
     }
 
     .intro__title {
@@ -1262,8 +1284,9 @@ svg:hover {
 
     /* Intro */
 
-    .intro {
+    .intro__content {
         /* max-height: 100vh; */
+        margin: 40px auto 0;
     }
 
     .intro__inner {
