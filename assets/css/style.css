@@ -64,6 +64,9 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     left: 0;
     z-index: 1000;
+
+    transition: transform .3s ease, box-shadow .3s ease, background-color .3s ease;
+
 }
 
 .header.fixed {
@@ -336,7 +339,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .intro__inner {
     width: 100%;
-    padding: 96px 0;
+    padding: 130px 0;
 
     display: flex;
     align-items: center;
@@ -777,7 +780,7 @@ svg {
     cursor: pointer;
 }
 
-svg:hover {
+.about__item:hover svg {
     fill: #5417D7;
     transform: scale(1.15);
 }
