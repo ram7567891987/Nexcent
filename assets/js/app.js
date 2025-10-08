@@ -40,6 +40,20 @@ $(function() { // Run this function when the DOM is fully loaded
 
                 }, 500); // Animation duration is 500ms
 
+                 // на mobile — закрыть меню
+        $(".nav").removeClass("active");
+        $("#nav_toggle").removeClass("active");
+
      });
 
+     $(document).on("click", "#nav_toggle", function(event) {
+        event.preventDefault();
+        $(".nav").toggleClass("active");
+        $(this).toggleClass("active");
+    });
+
+
 });
+
+
+// Menu Nav Toggle 
