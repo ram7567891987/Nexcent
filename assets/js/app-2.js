@@ -1,6 +1,7 @@
 const header = document.querySelector('#header'); 
 const menu = document.querySelector('.nav') /* Навигационная панель */
 const burgerMenu = document.querySelector('.nav-toggle') /* Бургер Меню */
+const navID = document.getElementById("nav_toggle")
 
 // const body = document.body;
 
@@ -46,6 +47,13 @@ function checkScroll(scrollOffset) { // Функция для добавлени
         }
     }
 
+// Закрытие nav после нажатия на нужный раздел
+const closeNavToggle = document.querySelectorAll("[data-scroll]").forEach(link => {
+    link.addEventListener('click', function (){
+        menu.classList.remove('active');
+        navID.classList.remove('active');
+    });
+});
 // burgerMenu.addEventListener('click', function(){
 //     console.log('click!!!');
     
